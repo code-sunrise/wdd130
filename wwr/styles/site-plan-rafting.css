@@ -3,7 +3,8 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+/*I am unable to import a second font and i will be looking into what i have to do to fix that, thanks */
 
 :root {
   /* change the values below to your colors from your palette */
@@ -15,7 +16,7 @@ Fonts are separated by a & */
   /* change the values below to your chosen font(s) */
   --heading-font: "Figtree";
   font-weight: 800;
-  --paragraph-font: "Figtree", Helvetica, sans-serif;
+  --paragraph-font: "Merriweather", Helvetica, sans-serif;
   font-weight: 800;
 
   /* these colors below should be chosen from among your palette colors above */
