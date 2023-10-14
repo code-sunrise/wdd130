@@ -1,5 +1,42 @@
 /* image as background in the main the name and title are in the image
 
 for the sectionsome kind of margin or border is needed that is grey.
-a dark grey border. The images need to be circles somehow
+a dark grey border. The images need to be circles somehow */
+body {
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: grey;
+}
+main {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 
+}
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid #333;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
