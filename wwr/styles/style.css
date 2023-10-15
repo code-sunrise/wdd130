@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Permanent+Marker&display=swap');
 body {
   background-color:#368F8B;
   font-family: 'Figtree', sans-serif, Arial;
@@ -31,6 +31,7 @@ nav a:hover {
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    font-family: 'Permenent Marker', Arial, Helvetica, sans-serif;
 }
 .button-box {
     text-align: center;
@@ -84,7 +85,7 @@ header {
 }
 .msg h2 {
     color: #160F29;
-    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
 }
 .msg p {
     color: #160F29;
