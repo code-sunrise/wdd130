@@ -1,0 +1,13 @@
+.split-container {
+    display: grid;
+}
+.split-left {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+}
+.split-right {
+    width: 50%;
+    background-color: gray;
+    padding: 20px;
+}
