@@ -19,11 +19,11 @@ Fonts are separated by a | */
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: #474971; /* paragraph text on a white background */ 
   --paragraph-color-on-color: black; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #efc0ef  ;
-  --nav-link-color: #c9b6e2;
+  --paragraph-background-color: #c9b6e2  ;
+  --nav-link-color: #efc0ef;
   --nav-background-color: #474971;
   --nav-hover-link-color: #474971;
-  --nav-hover-background-color: #c9b6e2;
+  --nav-hover-background-color: #efc0ef;
 }
 
 
