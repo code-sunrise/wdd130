@@ -8,31 +8,35 @@ body {
 }
 main section {
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% auto;
-    grid-template-rows: [hero] 3fr, 1fr, [idaho] 2fr, 1fr, [utah] 2fr, 1fr, [arizona]3fr auto;
-    row-gap: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 70px;
 }
-#hero-image img {
-    max-width: 100%;
-    grid-column: 1 / span 10;
-    grid-row: 1 / span 3;
+#hero-img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / span;
+    grid-row: 1;
     justify-self: stretch;
 }
-.hero-msg {
+#hero-msg {
     grid-column: 4 / 6;
+    grid-row: 1
 }
 img 
-.idaho {
-    grid-row: idaho / 4;
-    grid-column: 1 / span 6;
+#idaho {
+    background-color: #FFCDBC;
+    width: 100%;
+    height: 100%;
 }
-.arizona {
-    grid-row: arizona;
-    grid-column: 1 / span 6;
+#idaho-img {
+    display: inline-block;
+    width: 50%;
 }
-.utah {
-    grid-column: 6 / span 5;
-    grid-row: utah / 7;
+#arizona {
+    background-color: #FFCDBC;
+}
+#utah {
+    background-color: #FFCDBC;
 }
 p {
     text-align: left;
