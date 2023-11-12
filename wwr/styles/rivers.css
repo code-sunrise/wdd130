@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Permanent+Marker&display=swap');
+body {
+  background-color:#368F8B;
+  font-family: 'Figtree', sans-serif, Arial;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+main section {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% auto;
+    grid-template-rows: [hero] 3fr, 1fr, [idaho] 2fr, 1fr, [utah] 2fr, 1fr, [arizona]3fr auto;
+    row-gap: 50px;
+}
+#hero-image img {
+    max-width: 100%;
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 3;
+    justify-self: stretch;
+}
+.hero-msg {
+    grid-column: 4 / 6;
+}
+img 
+.idaho {
+    grid-row: idaho / 4;
+    grid-column: 1 / span 6;
+}
+.arizona {
+    grid-row: arizona;
+    grid-column: 1 / span 6;
+}
+.utah {
+    grid-column: 6 / span 5;
+    grid-row: utah / 7;
+}
+p {
+    text-align: left;
+}
+#logo link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+    height: 80px;  
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+text-align: center;
+color: white;
+text-decoration: none;
+padding: 35px;
+}
+nav a:hover {
+    background-color: #FFCDBC;
+    color: #160F29;
+    text-decoration: underline;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #160F29;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #160F29;
+    color: #368F8B;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+footer a {
+    color: #368F8B;
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
