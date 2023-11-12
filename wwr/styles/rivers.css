@@ -14,9 +14,6 @@ main {
 h2 {
     font-family: "Permanent Marker", sans-serif;
 }
-.hero-img {
-    grid-column: span 5;
-}
 .idaho-msg, .utah-msg, .arizona-msg {
     grid-column: span 2;
     background-color: #FFCDBC;
