@@ -6,37 +6,36 @@ body {
   margin: 0;
   padding: 0;
 }
-main section {
+main {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    row-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
 }
-#hero-img {
-    width: 100%;
-    height: 100%;
-    grid-column: 1 / span;
-    grid-row: 1;
-    justify-self: stretch;
+.hero-img {
+    grid-column: span 5;
 }
-#hero-msg {
-    grid-column: 4 / 6;
-    grid-row: 1
-}
-img 
-#idaho {
+.idaho-msg, .utah-msg, .arizona-msg {
+    grid-column: span 2;
     background-color: #FFCDBC;
+    padding: 30px;
+}
+.idaho-img {
+    grid-column: 3 / span 3;
     width: 100%;
     height: 100%;
 }
-#idaho-img {
-    display: inline-block;
-    width: 50%;
+.utah-msg {
+    grid-column: 4 / span 2;
 }
-#arizona {
-    background-color: #FFCDBC;
+.utah-img {
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 100%;
 }
-#utah {
-    background-color: #FFCDBC;
+.arizona-img {
+    grid-column: 3 / span 3;
+    width: 100%;
+    height: 100%;
 }
 p {
     text-align: left;
