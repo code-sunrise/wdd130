@@ -11,6 +11,9 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 20px;
 }
+h2 {
+    font-family: "Permanent Marker", sans-serif;
+}
 .hero-img {
     grid-column: span 5;
 }
