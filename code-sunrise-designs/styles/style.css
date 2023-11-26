@@ -196,18 +196,18 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 40px;
-    row-gap: 100;
+    row-gap: 100px;
 }
 .page-grid {
     padding: 30px 0px;
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 40px;
-    row-gap: 100;
+    row-gap: 100px;
 }
 .example1, .example2, .example3 {
     width: 200px;
-    height: 400 px;
+    height: 400px;
     border-radius: 20px;
 }
 .example1 {
