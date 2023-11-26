@@ -7,45 +7,62 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="top-grid">
+    <header class="head-grid">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="books.html">Books</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
         </nav>
-        <img class="logo-img" src="images/code-sunrise.png" alt="Code Sunrise logo">
-        <h1 class="title">Code Sunrise Designs</h1>
-        <h2 class="subtitle">Where beauty meets utility</h2>
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="images/code-sunrise-logo.png" alt="Logo">
+        </a>
+        <div class="titles">
+            <h1 class="subtitle">Code Sunrise Designs</h1>
+            <h2 class="subtitle">Where beauty meets utility</h2>
+        </div>
     </header>
     <main>
         <section class="about-grid">
             <h2 class="greeting">Portfolio</h2>
-            <img src="images/code-wall.jpg" alt="Code Wall">
-            <p>
-                About Me
-                I started out as just a writer. I expanded into art, digital art, graphic design, and then realized my love of technology and decided to jump with both feet first into school for Softwre development. Thank you for viewing my portfolio.
-            </p>
-            <p>
-                Skills:
-                Creative problem solving
-                Graphic Design
-                Microsoft Office
-                Python
-                html/css
-            </p>
+            <div class="background-box">
+                <img class="background-img-horz" src="images/code-wall.jpg" alt="Code Wall">
+            </div>
+            <div>
+                <form action="/my-handling-form-page" method="post">
+                    <legend>Contact Us</legend>
+                    <ul>
+                      <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                      </li>
+                      <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                      </li>
+                      <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                      <li class="button">
+                        <button type="submit">Send your message</button>
+                      </li>
+                    </ul>
+                </form>
+            </div>
             <img src="images/prism.jpg" alt="Prism">
             <a href="https://www.linkedin.com/in/kiara-mitchell-9339a8211/">Find me on LinkedIn</a>
         </section>
     </main>
     <footer>
-        <p>Code Sunrise Designs © 2023 - Kiara Ward</p>
-        <a href="https://discord.gg/HPZbJanb3H">
-            <img src="images/Discord-Emblem.png" alt="Discord">
+        <p class="copyright">Code Sunrise Designs © 2023 - Kiara Ward</p>
+        <a class="footer-link" href="https://discord.gg/HPZbJanb3H">
+            <img class="footer-img" src="images/discord-logo.svg" alt="Discord">
         </a>
-        <a href="https://www.linkedin.com/in/kiara-ward-9339a8211/">
-            <img src="images/linkedin.jpg" alt="LinkedIn">
+        <a class="footer-link" href="https://www.linkedin.com/in/kiara-ward-9339a8211/">
+            <img class="footer-img" src="images/linkedin.png" alt="LinkedIn">
+            <!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> -->
         </a>
-        <a href="site-plan.html">Site Plan</a>
+        <a class="footer-link" href="site-plan.html">Site Plan</a>
     </footer>
 </body>
 </html>

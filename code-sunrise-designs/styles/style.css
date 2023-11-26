@@ -1,0 +1,274 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Raleway');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #efc0ef  ;
+  --secondary-color: #c9b6e2 ;
+  --accent1-color: #7f9183;
+  --accent2-color: #474971;
+  --white: #fff;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Fjalla One", sans-serif;
+  --paragraph-font: "Raleway", Helvetica, sans-serif;
+}
+*, *::before, *:after{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Raleway", Helvetica, sans-serif;
+    background-color: var(--white)
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fjalla One", sans-serif;;
+}
+a {
+    text-decoration: none;
+    color: var(--accent2-color)
+}
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+/* ------------------------
+
+~~~~~~~~~ Header ~~~~~~~~~
+
+------------------------*/
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    background-color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.logo-link {
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 100%;
+    border: 5px solid var(--primary-color);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+nav {
+    display: grid;
+    color: var(--secondary-color);
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+    justify-items: center;
+    align-items: center;
+    font-size: 20px;
+}
+.nav-link {
+    border-radius: 10px;
+    padding: 2em;
+}
+.nav-link:hover {
+    background-color: var(--accent1-color);
+    color:var(--white);
+}
+.titles {
+    margin: auto;
+    text-align: left;
+}
+
+/* ------------------------
+
+~~~~~~~~~ Main ~~~~~~~~~
+
+------------------------*/
+
+main {
+    display: block;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3em 1em;
+}
+.block1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.greeting {
+    font-size: 2em;
+    grid-column: 2/span 4;
+    grid-row-start: 7;
+    border-radius: 20px;
+    z-index: 1;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--white);
+}
+.welcome {
+    text-align: center;
+}
+.background-box {
+    grid-column: 1 /span 12;
+    grid-row: 1 / span 8;
+    z-index: 0;
+    justify-self: stretch;
+}
+.background-img {
+    width: 100%;
+    max-height: 700px;
+    border-radius: 20px;
+}
+.background-img-horz {
+    width: 100%;
+    border-radius: 20px;
+    max-height: 1000px;
+}
+.block2 {
+    font-size: 1.5em;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.block2 p {
+    background-color: var(--accent1-color);
+    border-radius: 20px;
+    padding: 100px;
+}
+.block3 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
+    row-gap: 100px;
+}
+.title {
+    font-size: 2em;
+    background-color: var(--white);
+    padding: 10px 30px;
+    border-radius: 10px;
+    grid-column: 9/span 2;
+    grid-row: 2/4;
+    z-index: 1;
+}
+
+.book-card1 {
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: var(--white);
+    grid-row: 2/span 3;
+    grid-column: 1/span 4;
+    z-index: 1;
+}
+.book-card2 {
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: var(--white);
+    grid-row: 2/span 3;
+    grid-column: 5/span 4;
+    z-index: 1;
+}
+.book-card3 {
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: var(--white);
+    grid-row: 5/span 3;
+    grid-column: 1/span 4;
+    z-index: 1;
+}
+.book-card4 {
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: var(--white);
+    grid-row: 5/span 3;
+    grid-column: 5/span 4;
+    z-index: 1;
+}
+.genre {
+    color: var(--accent2-color);
+}
+.status {
+    font-size: 1em;
+    text-align: center;
+    background-color: var(--accent1-color);
+    border-radius: 2px;
+}
+.block4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 40px;
+    row-gap: 100;
+}
+.page-grid {
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 40px;
+    row-gap: 100;
+}
+.example1, .example2, .example3 {
+    width: 200px;
+    height: 400 px;
+    border-radius: 20px;
+}
+.example1 {
+    grid-column: 1;
+}
+.example2 {
+    grid-column: 2;
+}
+.example3 {
+    grid-column: 3;
+}
+.example1:hover, .example2:hover, .example3:hover, .book-card1:hover, .book-card2:hover, .book-card3:hover, .book-card4:hover {
+    box-shadow: 10px 10px 5px 0px var(--accent1-color);
+    z-index: 5;
+}
+.portfolio-button {
+    grid-column: 2/span 5;
+    margin: auto;
+    align-self: center;
+    background-color: var(--secondary-color);
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+}
+.portfolio-button:hover {
+    background-color: var(--accent2-color);
+    color: var(--white);
+}
+
+
+
+
+/* ------------------------
+
+~~~~~~~~~ Footer ~~~~~~~~~
+
+------------------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    background-color: var(--accent2-color);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+}
+.copyright {
+    margin: 0 auto;
+    align-self: center;
+    padding: 20px;
+}
+.footer-link {
+    color: white;
+    margin: 0 auto;
+    align-self: center;
+}
+.footer-img {
+    width: 100%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50%;
+}
