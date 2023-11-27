@@ -272,3 +272,41 @@ footer {
     background-color: white;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 900px) {
+    nav, footer, {
+        flex-direction: column;
+    }
+    .block3 {
+        display: block;
+    }
+    nav a, .page-grid {
+        display: block;
+        padding: 15px;
+    }
+    .page-grid, .block4 {
+        display: block;
+        width: fit-content;
+        background-color: #efc0ef;
+    }
+    .background-box {
+        margin-top: 0;
+    }
+    .title, .block3 img {
+        display: none;
+    }
+    .background-img {
+        margin-top: 0;
+    }
+    .greeting {
+        font-size: 25px;
+        color: var(--accent2-color);
+    }
+    button {
+        margin: 0 auto;
+        align-self: center;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
