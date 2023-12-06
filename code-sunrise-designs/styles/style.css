@@ -153,10 +153,6 @@ main {
     grid-row: 1;
     z-index: 1;
 }
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
 .book-card1 {
     border-radius: 10px;
     padding: 10px 30px;
@@ -204,16 +200,30 @@ main {
     margin: 0 auto;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 40px;
-    row-gap: 100px;
     width: 100%;
+}
+.books {
+    grid-row: 1/ span 4
+}
+.discord img {
+    max-height: 200px;
 }
 .discord {
     background-color: #fff;
-    grid-column: 3 / span 5;
-    grid-row: 1;
-    display: block;
+    border-radius: 12px;
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    display: inline-flex;
     z-index: 1;
     text-align: left;
+    padding: 12px;
+}
+.description {
+    padding-top: 55px;
+}
+.discord h2 {
+    width: 200px;
+    text-align: center;
 }
 .example {
     width: 200px;
@@ -350,14 +360,11 @@ footer {
     nav, footer {
         flex-direction: column;
     }
-    .block3 {
-        display: block;
-    }
     nav a, .page-grid {
         display: block;
         padding: 15px;
     }
-    .page-grid, .block4 {
+    .page-grid, .block4, .block3 {
         display: block;
         width: fit-content;
         background-color: #efc0ef;
@@ -365,7 +372,7 @@ footer {
     .background-box {
         margin-top: 0;
     }
-    .title, .block3 img {
+    .title, .block3 img, .background-img-horz {
         display: none;
     }
     .background-img {
