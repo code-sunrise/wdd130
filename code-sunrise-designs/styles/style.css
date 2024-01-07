@@ -362,7 +362,7 @@ textarea {
 }
 
 .greeting-portfolio {
-    font-size: 2em;
+    font-size: 4em;
     grid-column: 5/span 4;
     grid-row-start: 2;
     border-radius: 20px;
